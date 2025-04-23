@@ -1,57 +1,28 @@
-
 # Weather App
 
-Bu proje, kullanıcılara dünya çapındaki şehirlerin hava durumu verilerini gösteren bir React uygulamasıdır. Kullanıcılar, şehir adlarını girerek anlık hava durumu bilgilerini öğrenebilirler. Ayrıca, uygulama birkaç varsayılan şehri (İstanbul, Ankara, İzmir, Paris, Sakarya) göstererek, hızlıca hava durumu bilgilerine erişim sağlar.
+This is a simple weather application built with React. The app allows users to check the weather of various cities around the world, including default cities like Istanbul, Ankara, Izmir, Paris, and Sakarya. It fetches data from the OpenWeather API and provides users with temperature, humidity, and weather conditions.
 
-## Özellikler
-- Kullanıcılar, şehir adını girerek hava durumu verilerini öğrenebilirler.
-- Hava durumu, sıcaklık, nem oranı ve hava durumu açıklaması gibi bilgileri içerir.
-- Birkaç varsayılan şehir (İstanbul, Ankara, İzmir, Paris, Sakarya) için hava durumu verileri otomatik olarak görüntülenir.
-- Kullanıcılar, yazarken anlık arama yapabilirler (debounce mekanizması ile).
-- Hata mesajları, geçersiz şehir adı girildiğinde veya API çağrısında sorun oluştuğunda görüntülenir.
+## 🏷️ Features
+- **City Search**: Search for the weather of any city in real-time.
+- **Default Cities**: Display weather information for predefined cities.
+- **Error Handling**: Shows error messages if the city is not found or if there is an API issue.
+- **Responsive Design**: Optimized for mobile and desktop views.
+- **Weather Information**: Displays temperature, humidity, and weather condition.
 
-## Kullanılan Teknolojiler
-- **React.js**: UI için kullanılan JavaScript kütüphanesi.
-- **TypeScript**: Statik tip denetimi için.
-- **OpenWeatherMap API**: Hava durumu verilerini almak için kullanılır.
-- **CSS**: Stil ve tasarım için kullanılır.
-- **Debounce**: API isteklerinin hızını kontrol etmek için kullanılır.
+## 🧠 Concepts Demonstrated
+- ✅ React functional components and hooks
+- ✅ State management with React hooks (`useState`, `useEffect`)
+- ✅ API integration with `fetch`
+- ✅ Dynamic content rendering
+- ✅ Error handling in API requests
+- ✅ CSS for responsive web design
 
-## Kurulum
+## 🛠️ Technologies Used
+- **React** (for front-end framework)
+- **OpenWeather API** (for weather data)
+- **CSS** (for styling and responsive design)
 
-### Prerequisites
-Bu projeyi çalıştırmak için Node.js ve npm'nin bilgisayarınızda yüklü olması gerekmektedir. Eğer yüklü değilse, [Node.js'i indirin](https://nodejs.org/).
-
-### Adımlar
-1. Bu projeyi GitHub'dan klonlayın:
+## 🚀 How to Run
+1. Clone the repository:
    ```bash
-   git clone https://github.com/kullaniciAdi/weather-app.git
-   ```
-
-2. Projeye gidin:
-   ```bash
-   cd weather-app
-   ```
-
-3. Gerekli bağımlılıkları yükleyin:
-   ```bash
-   npm install
-   ```
-
-4. Çevresel değişkeni `.env` dosyasına ekleyin (OpenWeatherMap API anahtarınızı almayı unutmayın):
-   - `.env` dosyasını proje kök dizininde oluşturun ve şu satırı ekleyin:
-     ```
-     REACT_APP_API_KEY=your_api_key_here
-     ```
-
-5. Uygulamayı başlatın:
-   ```bash
-   npm start
-   ```
-
-6. Tarayıcıda uygulamayı görmek için [http://localhost:3000](http://localhost:3000) adresini ziyaret edin.
-
-## API Kullanımı
-
-Bu uygulama, **OpenWeatherMap API**'sini kullanmaktadır. API anahtarınızı [OpenWeatherMap](https://openweathermap.org/) sitesinden alabilirsiniz. Anahtarınızı `.env` dosyasına ekleyin ve uygulamanın çalışmasını sağlayın.
-
+   git clone https://github.com/yourusername/weather-app.git
