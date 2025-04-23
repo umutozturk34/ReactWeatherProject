@@ -55,14 +55,3 @@ Bu projeyi çalıştırmak için Node.js ve npm'nin bilgisayarınızda yüklü o
 
 Bu uygulama, **OpenWeatherMap API**'sini kullanmaktadır. API anahtarınızı [OpenWeatherMap](https://openweathermap.org/) sitesinden alabilirsiniz. Anahtarınızı `.env` dosyasına ekleyin ve uygulamanın çalışmasını sağlayın.
 
-## Katkı
-
-Katkı sağlamak isterseniz, lütfen aşağıdaki adımları izleyin:
-
-1. Bu depoyu çatallayın (fork).
-2. Değişikliklerinizi yeni bir branch üzerinde yapın.
-3. Çekme isteği (pull request) gönderin.
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
