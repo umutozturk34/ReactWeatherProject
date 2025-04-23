@@ -1,0 +1,75 @@
+.app {
+  text-align: center;
+  background-color: #f0f4f8;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #004e92;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #004e92;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+.weather-card {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  background-color: #bdfbe8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: left;
+}
+
+.weather-card img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .weather-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  input[type='text'] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
