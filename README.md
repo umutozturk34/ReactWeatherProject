@@ -1,46 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather App
 
-## Available Scripts
+Bu proje, kullanıcılara dünya çapındaki şehirlerin hava durumu verilerini gösteren bir React uygulamasıdır. Kullanıcılar, şehir adlarını girerek anlık hava durumu bilgilerini öğrenebilirler. Ayrıca, uygulama birkaç varsayılan şehri (İstanbul, Ankara, İzmir, Paris, Sakarya) göstererek, hızlıca hava durumu bilgilerine erişim sağlar.
 
-In the project directory, you can run:
+## Özellikler
+- Kullanıcılar, şehir adını girerek hava durumu verilerini öğrenebilirler.
+- Hava durumu, sıcaklık, nem oranı ve hava durumu açıklaması gibi bilgileri içerir.
+- Birkaç varsayılan şehir (İstanbul, Ankara, İzmir, Paris, Sakarya) için hava durumu verileri otomatik olarak görüntülenir.
+- Kullanıcılar, yazarken anlık arama yapabilirler (debounce mekanizması ile).
+- Hata mesajları, geçersiz şehir adı girildiğinde veya API çağrısında sorun oluştuğunda görüntülenir.
 
-### `npm start`
+## Kullanılan Teknolojiler
+- **React.js**: UI için kullanılan JavaScript kütüphanesi.
+- **TypeScript**: Statik tip denetimi için.
+- **OpenWeatherMap API**: Hava durumu verilerini almak için kullanılır.
+- **CSS**: Stil ve tasarım için kullanılır.
+- **Debounce**: API isteklerinin hızını kontrol etmek için kullanılır.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Kurulum
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
+Bu projeyi çalıştırmak için Node.js ve npm'nin bilgisayarınızda yüklü olması gerekmektedir. Eğer yüklü değilse, [Node.js'i indirin](https://nodejs.org/).
 
-### `npm test`
+### Adımlar
+1. Bu projeyi GitHub'dan klonlayın:
+   ```bash
+   git clone https://github.com/kullaniciAdi/weather-app.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Projeye gidin:
+   ```bash
+   cd weather-app
+   ```
 
-### `npm run build`
+3. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Çevresel değişkeni `.env` dosyasına ekleyin (OpenWeatherMap API anahtarınızı almayı unutmayın):
+   - `.env` dosyasını proje kök dizininde oluşturun ve şu satırı ekleyin:
+     ```
+     REACT_APP_API_KEY=your_api_key_here
+     ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Uygulamayı başlatın:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Tarayıcıda uygulamayı görmek için [http://localhost:3000](http://localhost:3000) adresini ziyaret edin.
 
-### `npm run eject`
+## API Kullanımı
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Bu uygulama, **OpenWeatherMap API**'sini kullanmaktadır. API anahtarınızı [OpenWeatherMap](https://openweathermap.org/) sitesinden alabilirsiniz. Anahtarınızı `.env` dosyasına ekleyin ve uygulamanın çalışmasını sağlayın.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Katkı
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Katkı sağlamak isterseniz, lütfen aşağıdaki adımları izleyin:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Bu depoyu çatallayın (fork).
+2. Değişikliklerinizi yeni bir branch üzerinde yapın.
+3. Çekme isteği (pull request) gönderin.
 
-## Learn More
+## Lisans
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bu proje MIT lisansı altında lisanslanmıştır.
